@@ -7,7 +7,7 @@ import { FaUser, FaCreditCard, FaCalendarAlt, FaLock } from 'react-icons/fa';
 const PaymentPage = () => {
   return (
     <div className="payment-background d-flex align-items-center justify-content-center">
-      <div className="container my-5">
+      <div className="container my-5 pay-container position-relative z-index-custom">
         <div className="row justify-content-center">
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="credit-card shadow-lg p-4 rounded bg-gradient text-white">

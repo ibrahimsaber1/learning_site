@@ -4,8 +4,8 @@ import '../styles/style.css';
 
 const Pricing = () => {
   return (
-    <div className="pages-background d-flex align-items-center justify-content-center">
-      <div className="container text-center my-5">
+    <div className="signup-background d-flex align-items-center justify-content-center ">
+      <div className="container text-center my-5 position-relative z-index-custom">
         <div className="promo-message mb-5"> 
           <span className="text-black promo-text"> 
             START YOUR 1-MONTH FREE TRIAL. CANCEL ANYTIME

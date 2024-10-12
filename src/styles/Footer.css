@@ -1,14 +1,63 @@
-/* Footer.css */
-
+/* Footer Styling */
 .footer {
-    background-color: #121d33;
-    padding: 20px;
-    color: #fff;
+  width: 100%;
+  background-color: #121d33;
+  text-align: center;
+  padding: 20px 0px;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-waves {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+svg {
+  width: 100%;
+}
+
+.wave {
+  animation: wave 3s linear infinite;
+  fill: #4478e3;
+}
+
+#wave2 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+  opacity: 0.6;
+}
+
+#wave3 {
+  animation-duration: 7s;
+  opacity: 0.3;
+}
+
+/* Center the navigation links */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #4478e3;
+  padding-bottom: 5%;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Animation for waves */
+@keyframes wave {
+  to {
+    transform: translateX(-100%);
   }
-  
-  .footer-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
+}

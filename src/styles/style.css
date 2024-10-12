@@ -1,16 +1,34 @@
 /* SignUp.css */
+
 .signup-background {
+  position: relative;
   background-image: url('../assets/background.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
+  overflow: hidden; /* Ensure that the overlay stays within the container */
 }
+
+/* Add the overlay using ::before */
+.signup-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 54, 0.3); /* This is the translucent color */
+  z-index: 0; /* Ensure the overlay is above the background image */
+}
+
+
 
 .card-signup {
   background-color: #121D3A; /* Dark background with transparency */
   border-radius: 15px;
   color: white;
+  z-index: 3; 
 }
 
 .text-primary {
@@ -69,13 +87,16 @@
   height: 250px; 
 }
 
-.pages-background {
+.z-index-custom{
+  z-index: 4;
+}
+/* .pages-background {
   background-image: url('../assets/background.png');
   background-size: cover;
   background-position: center;
   height: 90vh;
   width: 100%;
-}
+} */
 
 /* ----------------------------------------------------------------------------------------------- */
 /*--------------------------------------- payment.css -------------------------------------------- */
