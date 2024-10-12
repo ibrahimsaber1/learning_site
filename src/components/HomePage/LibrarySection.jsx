@@ -5,6 +5,7 @@ import '../../styles/HomePage/LibrarySection.css';
 const LibrarySection = () => {
   return (
     <section className="library-section text-center">
+        <div className="library-div position-relative">
       <h2 className="section-title">A UNIVERSE OF ARABIC LIBRARY IN ALMOST "EVERYTHING"</h2>
       <h2 className="section-title">LEARNING THROUGH YOUTUBE IN ITS UNIQUE PRIME</h2>
 
@@ -147,6 +148,7 @@ const LibrarySection = () => {
             </div>
         </div>
     </main>
+    </div>
     </section>
   );
 };
