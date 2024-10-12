@@ -1,9 +1,10 @@
 // Header.jsx
 import React from 'react';
+import '../styles/Header.css';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+    <nav className="navbar navbar-expand-lg px-5">
       <a className="navbar-brand" href="/">
         <img src="/assets/header_logo.png" alt="Youniverse Logo" width="50" className="mr-2" />
         YOUNIVERSE EDUCATION
