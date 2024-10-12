@@ -1,0 +1,14 @@
+/* Footer.css */
+
+.footer {
+    background-color: #121d33;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  

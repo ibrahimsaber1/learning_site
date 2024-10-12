@@ -1,0 +1,101 @@
+.library-section {
+  padding: 50px;
+  background: url('../../../public/assets/library.jpeg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  min-height: 180vh;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.Explore-btn{
+  font-size: 1.2rem;
+  margin-top: 30PX;
+  margin-bottom: 30px;
+  padding: 10PX 25PX;
+  border: none;
+  border-radius: 15PX;
+  background: linear-gradient(135deg, #517CF8, #000f66);
+  color: #fff;
+}
+
+.Explore-btn:hover{
+  cursor: pointer;
+  color: #f5f5f5;
+  background-color: linear-gradient(135deg, #ffffff, #000000);
+}
+
+.container {
+  max-width: 90%; /* Adjust to fit the content */
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%); /* 3 cards per row, each 30% wide */
+  gap: 5%; /* 10% gap between cards */
+  justify-content: center;
+}
+
+.course-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  /* background-color: aqua; */
+  flex-direction: row; /* Ensure image and content stack vertically on smaller screens */
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 15, 102 , 0.8) ;
+
+}
+
+.card-image {
+  border-radius: 15%;
+  width: 100%;
+  height: 100%;
+  max-width: 100px; 
+  object-fit: cover;
+  margin-bottom: 15px; 
+  padding: 10px 0px 0px 0px;
+}
+
+.card-content {
+  text-align:left;
+  padding: 0px 0px 0px 5% ;
+  /* background-color: red; */
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.card-content a {
+  color: #fafafa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}

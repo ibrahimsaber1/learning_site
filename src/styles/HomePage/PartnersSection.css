@@ -1,0 +1,21 @@
+/* PartnersSection.css */
+
+.partners-section {
+    padding: 60px 20px;
+    background-color: #1a237e;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    color: #1a237e;
+    width: 200px;
+  }
+  

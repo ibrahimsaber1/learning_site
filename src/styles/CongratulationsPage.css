@@ -1,0 +1,41 @@
+/* CongratulationsPage.css */
+
+.congrats-background {
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative; /* Added to allow absolute positioning of GIF */
+}
+
+.celebration-gif {
+  position: absolute; /* Position the GIF absolutely within the parent container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to keep the center point of the GIF aligned */
+  z-index: 10; /* Make sure it appears above other elements */
+  width: 60%; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  z-index: 5; /* Ensure text appears above background */
+  position: relative; /* Keep text above background but below the GIF */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  z-index: 5; /* Ensure button appears above background */
+  position: relative; /* Keep button above background but below the GIF */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

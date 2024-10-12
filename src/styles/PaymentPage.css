@@ -1,0 +1,90 @@
+/* ----------------------------------------------------------------------------------------------- */
+/*--------------------------------------- PaymentPage.css -------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+  .payment-background {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+  }
+  
+  /* background: linear-gradient(135deg, #3f51b5, #5c6bc0); */
+
+  .credit-card {
+    background: #3f51b5 ;
+    border-radius: 15px;
+    color: #ffffff;
+  }
+  
+  .credit-card .chip {
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(135deg, #dbe0ff, #000f66);
+    border-radius: 4px;
+  }
+  
+  .card-number {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+  
+  .card-holder-name,
+  .card-expiry {
+    font-weight: bold;
+  }
+  
+  .payment-form {
+    border-radius: 15px;
+    background-color: #3f51b5;
+  }
+  
+  .payment-form h4 {
+  }
+  
+  .form-control-lg {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-control-lg:focus {
+    border-color: #1a237e;
+    box-shadow: 0 0 5px rgba(26, 35, 126, 0.5);
+  }
+  
+  .btn-success {
+    background-color: #43a047;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-success:hover {
+    background-color: #388e3c;
+  }
+  
+  .btn-outline-danger {
+    border-color: #f44336;
+    color: #f44336;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #f44336;
+    color: #ffffff;
+  }
+  
+
+  .input-group .input-group-text {
+     background: #f1f1f1; /*Light background color for icons*/
+    border: none; /* Remove the border to make the icon part of the input */
+  }
+
+
+  
+  .form-control-lg:focus {
+    box-shadow: none; /* Remove the default focus shadow */
+    border-color: #1a237e; /* Add a custom border color on focus */
+  }

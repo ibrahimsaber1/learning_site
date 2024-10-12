@@ -1,0 +1,47 @@
+.courses-section {
+  text-align: center;
+  margin: 0px 0;
+  background-color: #121D3A; /* Sets the background color */
+  padding: 80px 0; 
+  height: 70vh;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff; /* White text for better contrast on the dark background */
+}
+
+.course-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative; /* Allows child elements to be positioned relatively */
+}
+
+.course-thumbnails img {
+  width: 280px; /* Adjust width as needed */
+  height: 180px; /* Adjust height as needed */
+  border-radius: 20px; /* Creates rounded corners */
+  object-fit: cover; /* Ensures the image scales correctly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Specific styling for the center image to make it appear in front */
+.course-thumbnails img:nth-child(2) {
+  transform: scale(1.1); /* Enlarges the center image */
+  z-index: 2; /* Puts the center image in front */
+}
+
+/* Move the side images slightly backward */
+.course-thumbnails img:nth-child(1),
+.course-thumbnails img:nth-child(3) {
+  z-index: 1; /* Puts these images behind the center image */
+  transform: translateY(10px); /* Moves the side images down slightly */
+}
+
+.course-thumbnails img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
